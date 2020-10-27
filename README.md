@@ -1,2 +1,2 @@
 # Trabalhos 
-## repositorios prara respostas de exercicios
+## repositorios prara respostas de exercicios e APS
