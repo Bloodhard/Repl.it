@@ -40,7 +40,3 @@ while op!='S' and op!='s':
   print('\n Os com melhor renda (3500+) tem um salario de: ''\n',money)
 
   op=input('\nPara sair do programa digite' 'S: ')
-[03:33]
-Da pra ficar mto melhor em questão estetica
-[03:33]
-mas o código ta funcionando
