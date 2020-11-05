@@ -1,11 +1,16 @@
-def triangulo_pascal(n):
-    for linha in range(1, n+1):
-        num = 1
-        linha_atual = []
-        for i in range(1, linha+1):
-            linha_atual.append(int(num))
-            num = num * (linha-i) / i
-        print(linha_atual)
 
+def trianguloPascal(n):
+  lista = [[1],[1,1]]
+  for i in range(1,n):
+    linha = [1]
+    for j in range(0,len(lista[i])-1):
+      linha += [ lista[i][j] + lista[i][j+1] ]
+    linha += [1]
+    lista += [linha]
+  return lista
 
-triangulo_pascal(10)
+n = int(input("Digite o número de linhas para o triângulo de Pascal: "))
+resultado = trianguloPascal(n-1)
+
+for i in range(len(resultado)):
+  print(resultado[i])
