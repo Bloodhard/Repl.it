@@ -1,6 +1,10 @@
 n1=float(input('Digite o Primeiro número: '))
 n2=float(input('Digite o Segundo número: '))
 
+for i in range(120):
+  print('=', end = '')
+
+print(f'\n1 - Soma / 2 - Subtração/ 3 - multiplicação/ 4 - divisão/ 5 - verificar se {int(n1)} é menor que {int(n2)}/ 6 - verificar se {n1} é maior que {n2} ')
 op=input('Digite a operação desejada: ')
 if op == '1':
   print(n1+n2)
