@@ -1,20 +1,21 @@
-lista = []
-for x in range(30):
-  lista.append(input("digite o número desejado "))
-print('A sua lista de numeros é: ')
-print(lista, '\n')
+list1 = []
+numrange = 30
+for i in range(numrange):
+  list1.append(input(f"digite o número desejado na posição {i+1}: "))
+print('\nLista de Numeros: ')
+print(list1, '\n')
 
-listaI = []
-listaP =[]
-for x in range(len(lista)+1):
-  if x != 0:
-    if (x % 2) == 0:
-      listaP.append(x)
+listimp = []
+listpar =[]
+for i in range(len(list1)+1):
+  if i != 0:
+    if (i % 2) == 0:
+      listpar.append(i)
     else: 
-      listaI.append(x)
+      listimp.append(i)
 
 print('os números impares são:')
-print(listaI)
+print(listimp)
 
 print('os números pares são:')
-print(listaP)
+print(listpar)
